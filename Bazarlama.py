@@ -18,7 +18,7 @@ import pyodbc
 
 try:
     conn = get_db_connection()
-    print("Connection successful!")
+    st.write("Connection successful!")
     conn.close()
 except Exception as e:
-    print(f"Error: {e}")
+    st.write(f"Error: {e}")
