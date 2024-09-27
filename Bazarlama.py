@@ -12,7 +12,8 @@ def get_db_connection():
         f'SERVER={server};'
         f'DATABASE={database};'
         f'UID={username};'
-        f'PWD={password}'
+        f'PWD={password};'
+        'Connection Timeout=30;'
     )
     return pyodbc.connect(conn_str)
 import pyodbc
